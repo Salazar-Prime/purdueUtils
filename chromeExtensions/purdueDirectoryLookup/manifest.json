@@ -1,0 +1,13 @@
+{
+  "name": "Purdue Directory Lookup",
+  "version": "0.1.0",
+  "description": "Add a right clock context menu to loopup selection on Purdue Directory",
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  }
+}
