@@ -8,14 +8,11 @@ chrome.contextMenus.create({
 //listerner for context menu
 chrome.contextMenus.onClicked.addListener(function (info, tab) {
     // URL of the search page
-    baseURL = "https://www.purdue.edu/directory";
-    chrome.tabs.create({ url: baseURL });
-    // get search element from page
-    var searchElement = document.getElementById("search-label");
-    console.log(searchElement);
-    // set search element to the selected text
-    searchElement.value = info.selectionText;
-    // submit the search
-    document.getElementById("glass").click();
-    console.log("btn clicked");
+    baseURL = "https://www.purdue.edu/directory/?searchString=";
+    searchURL = baseURL + encodeURIComponent(info.selectionText);
+    console.log(searchURL);
+    // open the search page in a new tab
+    chrome.tabs.create({ url: searchURL });
 });
+
+// https://www.purdue.edu/directory/?searchString=
