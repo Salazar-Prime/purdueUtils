@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Purdue Directory Lookup",
   "version": "0.1.0",
-  "description": "Add a right clock context menu to loopup selection on Purdue Directory",
+  "description": "Add a right click context menu to loopup selection on Purdue Directory",
   "author": "Varun Aggarwal",
   "icons": {
     "48": "assets/icons8-search-client-48.png"
